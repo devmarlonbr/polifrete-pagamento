@@ -430,7 +430,11 @@
 <!-- 
           <iframe src="https://drive.google.com/file/d/1UGOiUjBEfjXfKDvWtFJ8DZJ4PSrZzmNR/preview" width="100%" height="100%" allow="autoplay"></iframe> -->
 
-          <video id="video" preload="auto" controls class="w-full h-full rounded-lg video">
+          <video poster="./assets/polifrete-video-poster.png" id="video" preload="auto" controls class="object-cover hidden md:block w-full h-full rounded-lg video">
+            <source src="https://drive.google.com/uc?export=download&id=1UGOiUjBEfjXfKDvWtFJ8DZJ4PSrZzmNR" type='video/mp4'>
+          </video>
+
+          <video poster="./assets/video-poster-mob.png" id="video" preload="auto" controls class="object-cover block md:hidden w-full h-full rounded-lg video">
             <source src="https://drive.google.com/uc?export=download&id=1UGOiUjBEfjXfKDvWtFJ8DZJ4PSrZzmNR" type='video/mp4'>
           </video>
 
@@ -459,7 +463,9 @@
               </p>
             </div>
             <div class="flex gap-8 items-center mt-16 md:mt-6">
-              <div class="h-[56px] w-[56px] bg-redPrimary rounded-full"></div>
+              <div class="h-[56px] w-[56px]  rounded-full">
+                <img src="./assets/arielly-oliveira.png" alt="">
+              </div>
               <div>
                 <h5 class="font-archivo text-head24 text-black font-bold">
                   Arielly Oliveira
