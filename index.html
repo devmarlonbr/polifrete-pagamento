@@ -26,9 +26,17 @@
 
   <body>
 
-<!--     <div class="bg-[#01AD6F] hover:bg-[#107551] transition-all h-[56px] w-[56px] flex justify-center items-center fixed bottom-5 lg:bottom-8 right-5 z-40 rounded-lg">
+    <a target="_blank" href="mailto:atendimento@polifrete.com.br" class="bg-[#0C49E5] hover:bg-[#0030B9] transition-all h-[64px] w-[64px] flex justify-center items-center fixed 
+    bottom-[160px] right-4 md:bottom-[208px] md:right-[48px] 
+    z-40 rounded-xl">
+      <img src="./assets/chat-fixed-icon.svg" alt="" srcset="">
+    </a>
+
+    <a target="_blank" href="" class="bg-[#01AD6F] hover:bg-[#107551] transition-all h-[64px] w-[64px] flex justify-center items-center fixed 
+    bottom-[88px] right-4 md:bottom-[128px] md:right-[48px] 
+    z-40 rounded-xl">
       <img src="./assets/whatsapp-icon.svg" alt="" srcset="">
-    </div> -->
+    </a>
 
     <div
       class="w-full lg:h-[850px] bg-blueDark bg-[url('../assets/background-hero-polifrete.webp')] bg-cover bg-center"
@@ -90,13 +98,14 @@
       </header>
 
       <main
-        class="max-h-[1120px] overflow-hidden md:max-h-max px-5 lg:px-0 container mx-auto h-full w-full flex flex-col lg:flex-row items-center justify-between pt-[142px] md:pt-[72px]"
+        class="overflow-x-hidden px-5 lg:px-0 container mx-auto h-full w-full flex flex-col lg:flex-row items-center justify-between pt-[142px] md:pt-[72px]"
       >
         <div class="max-w-[665px] w-full">
 
           <div class="
+          hidden md:flex
           intersect intersect-hidden intersect-transition-60 intersect-animate-right
-          flex items-center gap-4">
+          items-center gap-4">
             <div
               class="h-[40px] w-[40px] rounded-lg bg-redPrimary flex justify-center items-center"
             >
@@ -124,8 +133,23 @@
           </p>
 
           <div class="
+          flex md:hidden mt-12
+          intersect intersect-hidden intersect-transition-60 intersect-animate-right
+          items-center gap-4">
+            <div
+              class="h-[40px] w-[40px] rounded-lg bg-redPrimary flex justify-center items-center"
+            >
+              <img src="./assets/seguro-icon.svg" alt="" />
+            </div>
+            <p class="font-archivo font-semibold text-sm12 md:text-body14 text-white">
+              Seu pagamento de frete está seguro por aqui
+            </p>
+          </div>
+
+          <div class="
+          hidden md:flex
           intersect intersect-hidden intersect-transition-60 intersect-animate-top
-          mt-16 md:mt-[96px] flex items-center gap-8">
+          mt-16 md:mt-[96px]  items-center gap-8">
             <div
               class="shrink-0 w-[48px] h-[48px] bg-white bg-opacity-25 rounded-lg flex justify-center items-center"
             >
@@ -140,21 +164,21 @@
           </div>
 
         </div>
-        <div class="relative mt-16 md:mt-0">
-          <div class="intersect intersect-hidden intersect-transition-60 intersect-animate-bottom">
-            <img class=" hidden md:block" src="./assets/app-smartphone-polifrete.webp" alt="" />
+        <div class="overflow-hidden relative mt-16 md:mt-0">
+          <div class="overflow-hidden intersect intersect-hidden intersect-transition-60 intersect-animate-bottom w-full">
+            <img class=" hidden md:block" src="./assets/app-smartphone-polifrete.png" alt="" />
           </div>
           <div class="intersect intersect-hidden intersect-transition-60 intersect-animate-bottom">
-            <img class=" blocK md:hidden" src="./assets/app-smartphone-polifrete-mob.webp" alt="" />
+            <img class=" blocK md:hidden" src="./assets/app-smartphone-polifrete-mob.png" alt="" /> 
           </div>
           <div>
-            <div class="opacity-0 top-[200px] md:top-[300px] right-0 absolute flex items-center gap-3 p-3 bg-white animate-cards-image">
+            <div class="opacity-0 top-[338px] md:top-[300px] right-0 absolute flex items-center gap-3 p-3 bg-white animate-cards-image">
               <img src="./assets/checkbox-icon.svg" alt="" srcset="">
               <p class="font-electrolize text-sm12 md:text-body16 text-black font-bold">CONTA DIGITAL</p>
             </div>
-            <div class="opacity-0 transition-all top-[256px] md:top-[360px] right-0 absolute flex items-center gap-3 p-3 bg-white animate-cards-image">
+            <div class="opacity-0 transition-all top-[388px] md:top-[360px] right-0 absolute flex items-center gap-3 p-3 bg-white animate-cards-image">
               <img src="./assets/checkbox-icon.svg" alt="" srcset="">
-              <p class="font-electrolize text-sm12 md:text-body16 text-black font-bold">PAGAMENTO DE PIX</p>
+              <p class="font-electrolize text-sm12 md:text-body16 text-black font-bold">PAGAMENTO E RECEBIMENTO VIA PIX</p>
             </div>
           </div>
         </div>
@@ -430,7 +454,7 @@
 <!-- 
           <iframe src="https://drive.google.com/file/d/1UGOiUjBEfjXfKDvWtFJ8DZJ4PSrZzmNR/preview" width="100%" height="100%" allow="autoplay"></iframe> -->
 
-          <video poster="./assets/polifrete-video-poster.png" id="video" preload="auto" controls class="object-cover hidden md:block w-full h-full rounded-lg video">
+          <video poster="./assets/polifrete-video-poster.png" id="video" preload="auto" controls class="object-fill hidden md:block w-full h-full rounded-lg video">
             <source src="https://drive.google.com/uc?export=download&id=1UGOiUjBEfjXfKDvWtFJ8DZJ4PSrZzmNR" type='video/mp4'>
           </video>
 
@@ -796,7 +820,7 @@
       </div>
     </section>
 
-    <section class="overflow-x-hidden px-5 lg:px-0 py-[240px] w-full bg-[url('../assets/background-caminhoneiro-polifrete.webp')] bg-no-repeat bg-cover bg-center">
+    <section class="overflow-x-hidden px-5 lg:px-0 py-[240px] w-full bg-[url('../assets/background-caminhoneiro-polifrete-mob.png')] md:bg-[url('../assets/background-caminhoneiro-polifrete.png')] bg-no-repeat bg-cover bg-center">
       <div class="container mx-auto">
 
         <h3 class="
@@ -836,9 +860,9 @@
           <div class="mt-6">
             <strong class="font-manrope text-caption16 text-white font-bold">SIGA NOSSAS REDES</strong>
             <div class="flex items-center gap-6 mt-6">
-              <a href=""><img src="./assets/instagran.svg" alt="" srcset=""></a>
-              <a href=""><img src="./assets/linkedin.svg" alt="" srcset=""></a>
-              <a href="div"><img src="./assets/youtube.svg" alt="" srcset=""></a>
+              <a href="https://www.instagram.com/polifretee/"><img src="./assets/instagran.svg" alt="" srcset=""></a>
+              <a href="https://br.linkedin.com/company/polifrete"><img src="./assets/linkedin.svg" alt="" srcset=""></a>
+              <a href="https://www.youtube.com/user/PolifreteOficial"><img src="./assets/youtube.svg" alt="" srcset=""></a>
             </div>
           </div>
         </div>
@@ -868,11 +892,11 @@
             <div>
               <strong class="font-manrope text-caption16 text-white font-bold">CONTATO</strong>
               <div class="flex flex-col gap-6 mt-8">
-                <a class=" hover:text-redPrimary transition-all font-manrope text-white text-body16 font-normal flex items-center gap-2" href="">
-                  <img src="./assets/chat-icon.svg" alt="" srcset=""> email@polifrete.com.br
+                <a class=" hover:text-redPrimary transition-all font-manrope text-white text-body16 font-normal flex items-center gap-2" href="mailto:atendimento@polifrete.com ">
+                  <img src="./assets/chat-icon.svg" alt="" srcset=""> atendimento@polifrete.com 
                 </a>
-                <a class="hover:text-redPrimary transition-all font-manrope text-white text-body16 font-normal flex items-center gap-2" href="">
-                  <img src="./assets/phone-icon.svg" alt="" srcset=""> +55 (00) 00000-0000
+                <a class="hover:text-redPrimary transition-all font-manrope text-white text-body16 font-normal flex items-center gap-2" href="tel:5511910291919">
+                  <img src="./assets/phone-icon.svg" alt="" srcset=""> +55 11 91029-1919
                 </a>
               </div>
             </div>
@@ -904,7 +928,7 @@
 
     </footer>
 
-    <script defer src="./script/devmarlon.js"></script>
+    <script src="./script/devmarlon.js"></script>
     <script src="./script/intersect.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

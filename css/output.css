@@ -600,6 +600,94 @@ video {
   top: 256px;
 }
 
+.top-\[240px\] {
+  top: 240px;
+}
+
+.top-\[280px\] {
+  top: 280px;
+}
+
+.top-\[320px\] {
+  top: 320px;
+}
+
+.top-\[328px\] {
+  top: 328px;
+}
+
+.top-\[30px\] {
+  top: 30px;
+}
+
+.top-\[356px\] {
+  top: 356px;
+}
+
+.top-\[380px\] {
+  top: 380px;
+}
+
+.top-\[388px\] {
+  top: 388px;
+}
+
+.top-\[340px\] {
+  top: 340px;
+}
+
+.top-\[3380px\] {
+  top: 3380px;
+}
+
+.top-\[338px\] {
+  top: 338px;
+}
+
+.bottom-\[80px\] {
+  bottom: 80px;
+}
+
+.bottom-\[120px\] {
+  bottom: 120px;
+}
+
+.right-\[40px\] {
+  right: 40px;
+}
+
+.right-\[48px\] {
+  right: 48px;
+}
+
+.bottom-\[128px\] {
+  bottom: 128px;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.bottom-\[88px\] {
+  bottom: 88px;
+}
+
+.bottom-\[8px\] {
+  bottom: 8px;
+}
+
+.bottom-\[104px\] {
+  bottom: 104px;
+}
+
+.bottom-\[168px\] {
+  bottom: 168px;
+}
+
+.bottom-\[160px\] {
+  bottom: 160px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -689,10 +777,6 @@ video {
   height: 152px;
 }
 
-.h-\[280px\] {
-  height: 280px;
-}
-
 .h-\[2px\] {
   height: 2px;
 }
@@ -721,52 +805,16 @@ video {
   height: 84px;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-\[480px\] {
-  height: 480px;
-}
-
-.h-\[5600px\] {
-  height: 5600px;
-}
-
-.h-\[560px\] {
-  height: 560px;
-}
-
-.h-\[620px\] {
-  height: 620px;
-}
-
-.h-\[680px\] {
-  height: 680px;
-}
-
-.h-\[720px\] {
-  height: 720px;
-}
-
-.h-\[780px\] {
-  height: 780px;
-}
-
-.h-\[820px\] {
-  height: 820px;
-}
-
-.h-\[840px\] {
-  height: 840px;
-}
-
 .h-\[860px\] {
   height: 860px;
 }
 
-.max-h-\[1120px\] {
-  max-height: 1120px;
+.h-full {
+  height: 100%;
+}
+
+.h-\[64px\] {
+  height: 64px;
 }
 
 .w-\[168px\] {
@@ -799,6 +847,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[64px\] {
+  width: 64px;
 }
 
 .max-w-\[210px\] {
@@ -949,6 +1001,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1017,6 +1073,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#0C49E5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 73 229 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-20 {
   --tw-bg-opacity: 0.2;
 }
@@ -1025,8 +1086,8 @@ video {
   --tw-bg-opacity: 0.25;
 }
 
-.bg-\[url\(\'\.\.\/assets\/background-caminhoneiro-polifrete\.webp\'\)\] {
-  background-image: url('../assets/background-caminhoneiro-polifrete.webp');
+.bg-\[url\(\'\.\.\/assets\/background-caminhoneiro-polifrete-mob\.png\'\)\] {
+  background-image: url('../assets/background-caminhoneiro-polifrete-mob.png');
 }
 
 .bg-\[url\(\'\.\.\/assets\/background-hero-polifrete\.webp\'\)\] {
@@ -1069,11 +1130,6 @@ video {
   background-repeat: no-repeat;
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1082,11 +1138,6 @@ video {
 .object-fill {
   -o-object-fit: fill;
      object-fit: fill;
-}
-
-.object-center {
-  -o-object-position: center;
-     object-position: center;
 }
 
 .p-10 {
@@ -1256,10 +1307,6 @@ video {
   line-height: 1.25;
 }
 
-.leading-none {
-  line-height: 1;
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(20 20 20 / var(--tw-text-opacity));
@@ -1314,11 +1361,6 @@ video {
 
 .opacity-80 {
   opacity: 0.8;
-}
-
-.outline-none {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 
 .transition-all {
@@ -1519,6 +1561,11 @@ body {
   background-color: rgb(16 117 81 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#0030B9\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 48 185 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-opacity-100:hover {
   --tw-bg-opacity: 1;
 }
@@ -1543,6 +1590,22 @@ body {
 
   .md\:top-\[360px\] {
     top: 360px;
+  }
+
+  .md\:bottom-\[128px\] {
+    bottom: 128px;
+  }
+
+  .md\:right-\[48px\] {
+    right: 48px;
+  }
+
+  .md\:bottom-\[200px\] {
+    bottom: 200px;
+  }
+
+  .md\:bottom-\[208px\] {
+    bottom: 208px;
   }
 
   .md\:order-2 {
@@ -1583,11 +1646,6 @@ body {
 
   .md\:h-\[345px\] {
     height: 345px;
-  }
-
-  .md\:max-h-max {
-    max-height: -moz-max-content;
-    max-height: max-content;
   }
 
   .md\:w-auto {
@@ -1636,6 +1694,10 @@ body {
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:bg-\[url\(\'\.\.\/assets\/background-caminhoneiro-polifrete\.png\'\)\] {
+    background-image: url('../assets/background-caminhoneiro-polifrete.png');
   }
 
   .md\:px-0 {
@@ -1692,6 +1754,18 @@ body {
 @media (min-width: 1024px) {
   .lg\:bottom-8 {
     bottom: 2rem;
+  }
+
+  .lg\:bottom-\[\] {
+    bottom: ;
+  }
+
+  .lg\:bottom-\[80PX\] {
+    bottom: 80PX;
+  }
+
+  .lg\:bottom-\[80px\] {
+    bottom: 80px;
   }
 
   .lg\:h-\[850px\] {
