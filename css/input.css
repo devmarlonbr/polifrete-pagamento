@@ -83,3 +83,84 @@ body {
     flex-direction: column;
   }
 }
+
+/* intersect */
+
+.intersect {
+}
+
+.intersect-transition-25 {
+  transition: 0.25s all;
+}
+.intersect-transition-40 {
+  transition: 0.4s all;
+}
+.intersect-transition-60 {
+  transition: 0.6s all;
+}
+.intersect-transition-80 {
+  transition: 0.8s all;
+}
+.intersect-transition-100 {
+  transition: 1s all;
+}
+
+.intersect-hidden {
+  opacity: 0;
+}
+
+.intersect-show {
+  opacity: 1;
+}
+
+.intersect-child:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.intersect-child:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.intersect-child:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+/* from bottom */
+
+.intersect-hidden.intersect-animate-bottom {
+  transform: translateY(25%);
+}
+
+.intersect-show.intersect-animate-bottom {
+  transform: translateY(0%);
+}
+
+/* from right */
+
+.intersect-hidden.intersect-animate-right {
+  transform: translateX(25%);
+}
+
+.intersect-show.intersect-animate-right {
+  transform: translateX(0%);
+}
+
+/* from left */
+
+.intersect-hidden.intersect-animate-left {
+  transform: translateX(-25%);
+}
+
+.intersect-show.intersect-animate-left {
+  transform: translateX(0%);
+}
+
+/* from top */
+
+.intersect-hidden.intersect-animate-top {
+  transform: translateY(-25%);
+}
+
+.intersect-show.intersect-animate-top {
+  transform: translateY(0%);
+}

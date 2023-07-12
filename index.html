@@ -27,9 +27,9 @@
 
   <body>
 
-    <div class="bg-[#01AD6F] hover:bg-[#107551] transition-all h-[56px] w-[56px] flex justify-center items-center fixed bottom-5 lg:bottom-8 right-5 z-40 rounded-lg">
+<!--     <div class="bg-[#01AD6F] hover:bg-[#107551] transition-all h-[56px] w-[56px] flex justify-center items-center fixed bottom-5 lg:bottom-8 right-5 z-40 rounded-lg">
       <img src="./assets/whatsapp-icon.svg" alt="" srcset="">
-    </div>
+    </div> -->
 
     <div
       class="w-full lg:h-[850px] bg-blueDark bg-[url('../assets/background-hero-polifrete.png')] bg-cover bg-center"
@@ -78,12 +78,13 @@
               </li>
             </ul>
             <div>
-              <button
+              <a
+                href="#contato"
                 class="hover:opacity-80 transition-all bg-redPrimary py-2 px-5 rounded-lg font-archivo text-caption16 font-bold text-white gap-2 flex items-center"
               >
                 Entrar em contato
                 <img src="./assets/chat-icon.svg" alt="" srcset="" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -93,7 +94,10 @@
         class="max-h-[1120px] overflow-hidden md:max-h-max px-5 lg:px-0 container mx-auto h-full w-full flex flex-col lg:flex-row items-center justify-between pt-[142px] md:pt-[72px]"
       >
         <div class="max-w-[665px] w-full">
-          <div class="flex items-center gap-4">
+
+          <div class="
+          intersect intersect-hidden intersect-transition-60 intersect-animate-right
+          flex items-center gap-4">
             <div
               class="h-[40px] w-[40px] rounded-lg bg-redPrimary flex justify-center items-center"
             >
@@ -104,19 +108,25 @@
             </p>
           </div>
           <h1
-            class="mt-4 font-archivo font-bold text-head24 lg:text-head40 text-white leading-tight"
+            class="
+            intersect intersect-hidden intersect-transition-60 intersect-animate-right
+            mt-4 font-archivo font-bold text-head24 lg:text-head40 text-white leading-tight"
           >
             Aprimore sua logística e evite complicações jurídicas com nosso
             serviço de pagamento de frete simplificado e seguro.
           </h1>
           <p
-            class="max-w-[580px] w-full mt-6 font-manrope text-body16 md:text-body18 text-white leading-normal"
+            class="
+            intersect intersect-hidden intersect-transition-60 intersect-animate-right
+            max-w-[580px] w-full mt-6 font-manrope text-body16 md:text-body18 text-white leading-normal"
           >
             Transforme sua logística com nosso serviço de pagamento de frete:
             facilidade, segurança e tranquilidade garantidas.
           </p>
 
-          <div class="mt-16 md:mt-[96px] flex items-center gap-8">
+          <div class="
+          intersect intersect-hidden intersect-transition-60 intersect-animate-top
+          mt-16 md:mt-[96px] flex items-center gap-8">
             <div
               class="shrink-0 w-[48px] h-[48px] bg-white bg-opacity-25 rounded-lg flex justify-center items-center"
             >
@@ -132,8 +142,12 @@
 
         </div>
         <div class="relative mt-16 md:mt-0">
-          <img class="hidden md:block" src="./assets/app-smartphone-polifrete.png" alt="" />
-          <img class="blocK md:hidden" src="./assets/app-smartphone-polifrete-mob.png" alt="" />
+          <div class="intersect intersect-hidden intersect-transition-60 intersect-animate-bottom">
+            <img class=" hidden md:block" src="./assets/app-smartphone-polifrete.png" alt="" />
+          </div>
+          <div class="intersect intersect-hidden intersect-transition-60 intersect-animate-bottom">
+            <img class=" blocK md:hidden" src="./assets/app-smartphone-polifrete-mob.png" alt="" />
+          </div>
           <div>
             <div class="opacity-0 top-[200px] md:top-[300px] right-0 absolute flex items-center gap-3 p-3 bg-white animate-cards-image">
               <img src="./assets/checkbox-icon.svg" alt="" srcset="">
@@ -151,11 +165,15 @@
     <section class="px-5 md:px-0 w-full container mx-auto py-[124px]">
       <div class="flex flex-col items-center">
         <span
-          class="uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
+          class="
+          intersect intersect-animate-top intersect-transition-60
+          uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
           >Já vivenciou situações como essas?</span
         >
         <h2
-          class="mt-2 max-w-[650px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
+          class="
+          intersect intersect-animate-top intersect-transition-80
+          mt-2 max-w-[650px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
         >
           Sua empresa enfrenta desafios no pagamento de frete?
         </h2>
@@ -278,7 +296,7 @@
       </div>
     </section>
 
-    <section id="beneficios" class="px-5 lg:px-0 w-full bg-black">
+    <section id="beneficios" class="overflow-x-hidden px-5 lg:px-0 w-full bg-black">
       <div class="container mx-auto w-full py-[124px]">
         <div class="flex flex-col md:flex-row justify-between items-end">
           <h2
@@ -292,16 +310,19 @@
             lugar
           </h2>
           <div class="mt-12 md:mt-0 w-full md:w-auto">
-            <button
+            <a
+            href="#contato"
               class="hover:opacity-80 transition-all bg-bluePrimary py-2 px-5 rounded-lg font-archivo font-bold text-button16"
             >
               Solicitar contato
-            </button>
+            </a>
           </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full mt-14 gap-8">
-          <div class="px-8 py-10 bg-white rounded-lg">
+          <div class="
+          intersect intersect-animate-right intersect-transition-40
+          px-8 py-10 bg-white rounded-lg">
             <div class="flex justify-center items-end w-full">
               <h3
                 class="text-head56 font-archivo font-bold text-bluePrimary leading-[48px]"
@@ -319,7 +340,9 @@
             </p>
           </div>
 
-          <div class="px-8 py-10 bg-white rounded-lg">
+          <div class="
+          intersect intersect-animate-right intersect-transition-40 intersect-child
+          px-8 py-10 bg-white rounded-lg">
             <div class="flex justify-center items-end w-full">
               <h3
                 class="text-head56 font-archivo font-bold text-bluePrimary leading-[48px]"
@@ -335,7 +358,9 @@
             </p>
           </div>
 
-          <div class="px-8 py-10 bg-white rounded-lg">
+          <div class="
+          intersect intersect-animate-right intersect-transition-40 intersect-child
+          px-8 py-10 bg-white rounded-lg">
             <div class="flex justify-center items-end w-full">
               <h3
                 class="text-head56 font-archivo font-bold text-bluePrimary leading-[48px]"
@@ -353,7 +378,9 @@
             </p>
           </div>
 
-          <div class="px-8 py-10 bg-white rounded-lg">
+          <div class="
+          intersect intersect-animate-right intersect-transition-40 intersect-child
+          px-8 py-10 bg-white rounded-lg">
             <div class="flex justify-center items-end w-full">
               <h3
                 class="text-head56 font-archivo font-bold text-bluePrimary leading-[48px]"
@@ -378,11 +405,15 @@
       <div class="container mx-auto w-full">
         <div class="flex flex-col md:items-start">
           <span
-            class="text-center uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
+            class="
+            intersect intersect-animate-top intersect-transition-60
+            text-center uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
             >DEPOIMENTOS</span
           >
           <h2
-            class="mt-2 max-w-[650px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
+            class="
+            intersect intersect-animate-top intersect-transition-80
+            mt-2 max-w-[650px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
           >
             O que nossos clientes dizem
           </h2>
@@ -441,11 +472,15 @@
       <div class="container mx-auto w-full">
         <div class="flex flex-col items-center">
           <span
-            class="uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
+            class="
+            intersect intersect-animate-top intersect-transition-60
+            uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
             >Para quem é?</span
           >
           <h2
-            class="mt-2 max-w-[650px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
+            class="
+            intersect intersect-animate-top intersect-transition-80
+            mt-2 max-w-[650px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
           >
             Quem pode se beneficiar
           </h2>
@@ -469,7 +504,7 @@
                 entrega e pagamento do frete
               </p>
               <a
-                href=""
+                href="#contato"
                 class="flex items-center gap-2 font-archivo font-bold text-bluePrimary mt-8"
                 >Enviar Mensagem
                 <img src="./assets/arrow-right-icon.svg" alt="" srcset=""
@@ -493,7 +528,7 @@
                 entrega e pagamento do frete
               </p>
               <a
-                href=""
+                href="#contato"
                 class="flex items-center gap-2 font-archivo font-bold text-bluePrimary mt-8"
                 >Enviar Mensagem
                 <img src="./assets/arrow-right-icon.svg" alt="" srcset=""
@@ -559,11 +594,13 @@
       <div class="container mx-auto">
         <div class="flex flex-col items-center">
           <span
-            class="uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
+            class="intersect intersect-animate-top intersect-transition-60 uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
             >vantagens</span
           >
           <h2
-            class="mt-2 max-w-[780px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
+            class="
+            intersect intersect-animate-top intersect-transition-80
+            mt-2 max-w-[780px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
           >
             Descubra as vantagens incríveis ao utilizar o meio de pagamento da
             Polifrete
@@ -688,7 +725,7 @@
                 Não perca mais tempo
               </strong>
               </h4>
-              <a class="font-archivo hover:opacity-80 transition-all text-button16 text-bluePrimary font-bold flex items-center gap-2 mt-4" href="">Entre em contato<img src="./assets/arrow-right-icon.svg" alt="" srcset=""></a>
+              <a class="font-archivo hover:opacity-80 transition-all text-button16 text-bluePrimary font-bold flex items-center gap-2 mt-4" href="#contato">Entre em contato<img src="./assets/arrow-right-icon.svg" alt="" srcset=""></a>
             </div>
           </div>
 
@@ -696,15 +733,17 @@
       </div>
     </section>
 
-    <section class="px-5 lg:px-0 w-full bg-white py-[124px]">
+    <section id="contato" class="px-5 lg:px-0 w-full bg-white py-[124px]">
       <div class="container mx-auto w-full">
         <div class="flex flex-col items-center">
           <span
-            class="uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
+            class="intersect intersect-animate-top intersect-transition-60 uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
             >contato</span
           >
           <h2
-            class="mt-2 max-w-[320px] md:max-w-[780px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
+            class="
+            intersect intersect-animate-top intersect-transition-80
+            mt-2 max-w-[320px] md:max-w-[780px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
           >
           Entre em contato com a gente
           </h2>
@@ -717,7 +756,9 @@
               <img class="w-full" src="./assets/contact-form-ilustration.svg" alt="" srcset="">
           </div>
 
-          <form class="order-first md:order-2 mb-16 md:mb-0 flex flex-col max-w-[487px] w-full" action="">
+          <div class="pipedriveWebForms order-first md:order-2 mb-16 md:mb-0 flex flex-col max-w-[487px] w-full" data-pd-webforms="https://webforms.pipedrive.com/f/ItfNFUBI9Uaog4lnjNtsJ6RUsLixANp2UzHMY4HYfwslHsS1Ijb8pE3TEowN4mn"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+
+          <!-- <form class="order-first md:order-2 mb-16 md:mb-0 flex flex-col max-w-[487px] w-full" action="">
             <div class="flex flex-col gap-3">
               <div class="flex flex-col">
                 <label class="font-manrope font-medium text-sm14 text-label mb-2" for="">Nome*</label>
@@ -739,21 +780,29 @@
               <img src="./assets/dados-seguros-icon.svg" alt="" srcset="">
               <span class="text-body16 font-archivo font-semibold text-black">Seus dados estão seguros por aqui</span>
             </div>
-          </form>
+          </form> -->
         </div>
       </div>
     </section>
 
-    <section class="px-5 lg:px-0 py-[240px] w-full bg-[url('../assets/background-caminhoneiro-polifrete.png')] bg-no-repeat bg-cover bg-center">
+    <section class="overflow-x-hidden px-5 lg:px-0 py-[240px] w-full bg-[url('../assets/background-caminhoneiro-polifrete.png')] bg-no-repeat bg-cover bg-center">
       <div class="container mx-auto">
 
-        <h3 class="max-w-[820px] leading-tight font-archivo text-head24 md:text-head32 font-bold text-white">
+        <h3 class="
+        intersect intersect-animate-right intersect-transition-60
+        max-w-[820px] leading-tight font-archivo text-head24 md:text-head32 font-bold text-white">
           facilite a  sua logística com soluções integradas para rastreamento, digitalização de documentos, auditoria e pagamento, tudo isso em um só lugar
         </h3>
-        <p class="max-w-[730px] font-manrope text-body14 md:text-body16 text-white mt-4">Diga adeus às causas judiciais. Na Polifrete  cuidamos de tudo para você, desde a liberação do crédito até a digitalização de documentos importantes. Tenha tranquilidade e segurança, nos deixando  cuidar de todos os detalhes enquanto você se concentra no crescimento do seu negócio.</p>
-        <button class="hover:opacity-80 transition-all mt-6 max-w-[220px] w-full bg-white font-archivo text-button16 font-bold text-black py-2 rounded-lg">
+        <p class="
+        intersect intersect-animate-right intersect-transition-60
+        max-w-[730px] font-manrope text-body14 md:text-body16 text-white mt-4">Diga adeus às causas judiciais. Na Polifrete  cuidamos de tudo para você, desde a liberação do crédito até a digitalização de documentos importantes. Tenha tranquilidade e segurança, nos deixando  cuidar de todos os detalhes enquanto você se concentra no crescimento do seu negócio.</p>
+        <div class="mt-6">
+          <a href="#contato" class="
+        intersect intersect-animate-right intersect-transition-100
+        hover:opacity-80 transition-all mt-6 max-w-[220px] w-full bg-white font-archivo text-button16 font-bold text-black py-2 px-5 rounded-lg">
           Entrar em contato
-        </button>
+        </a>
+        </div>
 
       </div>
     </section>
@@ -823,9 +872,9 @@
             <p class="max-w-[210px] w-full text-white font-manrope text-body14 text-left md:text-right">Preencha o formulário e ganhe 
               uma  consultoria de 20 minutos 
               grátis para sua empresa</p>
-            <button class="hover:opacity-80 transition-all w-full mt-6 font-archivo font-bold text-button16 text-white bg-redPrimary rounded-lg py-2 px-5">
+            <a href="#contato" class="hover:opacity-80 transition-all w-full mt-6 font-archivo font-bold text-button16 text-white bg-redPrimary rounded-lg py-2 px-5">
               Solicitar Contato
-            </button>
+            </a>
           </div>
           
 
@@ -843,6 +892,8 @@
       </div>
 
     </footer>
+
+    <script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 196783,playbookUuid: '6a441215-4658-4ac0-bef1-d664480adcbe',version: 2};(function () {var w = window;if (w.LeadBooster) {console.warn('LeadBooster already exists');} else {w.LeadBooster = {q: [],on: function (n, h) {this.q.push({ t: 'o', n: n, h: h });},trigger: function (n) {this.q.push({ t: 't', n: n });},};}})();</script><script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 

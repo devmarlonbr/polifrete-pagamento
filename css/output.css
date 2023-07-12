@@ -893,6 +893,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1031,6 +1035,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-5 {
@@ -1342,6 +1350,91 @@ body {
   }
 }
 
+/* intersect */
+
+.intersect {
+}
+
+.intersect-transition-25 {
+  transition: 0.25s all;
+}
+
+.intersect-transition-40 {
+  transition: 0.4s all;
+}
+
+.intersect-transition-60 {
+  transition: 0.6s all;
+}
+
+.intersect-transition-80 {
+  transition: 0.8s all;
+}
+
+.intersect-transition-100 {
+  transition: 1s all;
+}
+
+.intersect-hidden {
+  opacity: 0;
+}
+
+.intersect-show {
+  opacity: 1;
+}
+
+.intersect-child:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.intersect-child:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.intersect-child:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+/* from bottom */
+
+.intersect-hidden.intersect-animate-bottom {
+  transform: translateY(25%);
+}
+
+.intersect-show.intersect-animate-bottom {
+  transform: translateY(0%);
+}
+
+/* from right */
+
+.intersect-hidden.intersect-animate-right {
+  transform: translateX(25%);
+}
+
+.intersect-show.intersect-animate-right {
+  transform: translateX(0%);
+}
+
+/* from left */
+
+.intersect-hidden.intersect-animate-left {
+  transform: translateX(-25%);
+}
+
+.intersect-show.intersect-animate-left {
+  transform: translateX(0%);
+}
+
+/* from top */
+
+.intersect-hidden.intersect-animate-top {
+  transform: translateY(-25%);
+}
+
+.intersect-show.intersect-animate-top {
+  transform: translateY(0%);
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1362,12 +1455,12 @@ body {
   color: rgb(185 0 48 / var(--tw-text-opacity));
 }
 
-.hover\:opacity-80:hover {
-  opacity: 0.8;
-}
-
 .hover\:opacity-75:hover {
   opacity: 0.75;
+}
+
+.hover\:opacity-80:hover {
+  opacity: 0.8;
 }
 
 @media (min-width: 768px) {
