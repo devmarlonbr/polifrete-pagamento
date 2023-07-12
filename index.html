@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polifrete</title>
 
-    
+    <link rel="stylesheet" href="./css/output.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
@@ -22,7 +22,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
 
-    <link rel="stylesheet" href="./css/output.css" />
   </head>
 
   <body>
@@ -32,7 +31,7 @@
     </div> -->
 
     <div
-      class="w-full lg:h-[850px] bg-blueDark bg-[url('../assets/background-hero-polifrete.png')] bg-cover bg-center"
+      class="w-full lg:h-[850px] bg-blueDark bg-[url('../assets/background-hero-polifrete.webp')] bg-cover bg-center"
     >
       <header id="header" class="transition-all bg-transparent fixed top-0 left-0 right-0 z-50">
         <div
@@ -143,10 +142,10 @@
         </div>
         <div class="relative mt-16 md:mt-0">
           <div class="intersect intersect-hidden intersect-transition-60 intersect-animate-bottom">
-            <img class=" hidden md:block" src="./assets/app-smartphone-polifrete.png" alt="" />
+            <img class=" hidden md:block" src="./assets/app-smartphone-polifrete.webp" alt="" />
           </div>
           <div class="intersect intersect-hidden intersect-transition-60 intersect-animate-bottom">
-            <img class=" blocK md:hidden" src="./assets/app-smartphone-polifrete-mob.png" alt="" />
+            <img class=" blocK md:hidden" src="./assets/app-smartphone-polifrete-mob.webp" alt="" />
           </div>
           <div>
             <div class="opacity-0 top-[200px] md:top-[300px] right-0 absolute flex items-center gap-3 p-3 bg-white animate-cards-image">
@@ -617,7 +616,6 @@
               <strong class="text-caption18 font-archivo text-black">
                 Liberte-se do risco passivo
               </strong>
-              </h4>
               <p class="text-body16 font-manrope font-normal text-black">
                 Com a plataforma Polifrete, você reduz significativamente o
                 risco de passivos judiciais relacionados ao pagamento de fretes,
@@ -785,7 +783,7 @@
       </div>
     </section>
 
-    <section class="overflow-x-hidden px-5 lg:px-0 py-[240px] w-full bg-[url('../assets/background-caminhoneiro-polifrete.png')] bg-no-repeat bg-cover bg-center">
+    <section class="overflow-x-hidden px-5 lg:px-0 py-[240px] w-full bg-[url('../assets/background-caminhoneiro-polifrete.webp')] bg-no-repeat bg-cover bg-center">
       <div class="container mx-auto">
 
         <h3 class="
@@ -893,11 +891,12 @@
 
     </footer>
 
-    <script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 196783,playbookUuid: '6a441215-4658-4ac0-bef1-d664480adcbe',version: 2};(function () {var w = window;if (w.LeadBooster) {console.warn('LeadBooster already exists');} else {w.LeadBooster = {q: [],on: function (n, h) {this.q.push({ t: 'o', n: n, h: h });},trigger: function (n) {this.q.push({ t: 't', n: n });},};}})();</script><script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="./devmarlon.js"></script>
 
-    <script>
+    
+    <script defer>
       const swiper = new Swiper(".swiper", {
         slidesPerView: 6,
         loop: true,
@@ -907,87 +906,25 @@
         speed: 3000,
         breakpoints: {
     // when window width is >= 320px
-    320: {
-      slidesPerView: 2.5,
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 4,
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 5,
-    },
-    760: {
-      slidesPerView: 6,
-    }
-  }
+          320: {
+            slidesPerView: 2.5,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 4,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 5,
+          },
+          760: {
+            slidesPerView: 6,
+          }
+        }
       });
     </script>
 
-<script>
-  const header = document.querySelector("#header");
+<script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 196783,playbookUuid: '6a441215-4658-4ac0-bef1-d664480adcbe',version: 2};(function () {var w = window;if (w.LeadBooster) {console.warn('LeadBooster already exists');} else {w.LeadBooster = {q: [],on: function (n, h) {this.q.push({ t: 'o', n: n, h: h });},trigger: function (n) {this.q.push({ t: 't', n: n });},};}})();</script><script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
 
-  window.onscroll = function () {
-    handleScroll();
-  };
-
-  const handleScroll = () => {
-    if (window.pageYOffset > 90) {
-      header.classList.add("bg-header-fixed");
-    } else {
-      header.classList.remove("bg-header-fixed");
-    }
-  };
-
-  // callback run every time screen intersect an element
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("intersect-show");
-      entry.target.classList.remove("intersect-hidden");
-    } else {
-      entry.target.classList.add("intersect-hidden");
-      entry.target.classList.remove("intersect-show");
-    }
-  });
-});
-
-const elements = document.querySelectorAll(".intersect");
-elements.forEach((element) => observer.observe(element));
-
-console.log(
-  `Obrigado por acessar nosso site! 😁 \n Solicite um orçamento agora em www.devmarlon.work!`
-);
-
-const navbar = document.querySelector("#navbar");
-const buttonNavbar = document.querySelector("#button-navbar");
-
-buttonNavbar.addEventListener("click", () => {
-  navbar.classList.toggle("show-navbar");
-  header.classList.toggle("show-navbar-header");
-});
-
-const linkNavbar = document.querySelectorAll(".link-navbar");
-
-linkNavbar.forEach((link) =>
-  link.addEventListener("click", () => {
-    navbar.classList.remove("show-navbar");
-    header.classList.remove("show-navbar-header");
-  })
-);
-
-function checkIfIsScrolled() {
-  const scrollY = window.scrollY;
-  if (scrollY > 90) {
-    header.classList.add("bg-header-fixed");
-  }
-}
-
-
-checkIfIsScrolled();
-
-
-</script>
   </body>
 </html>
