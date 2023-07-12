@@ -48,31 +48,31 @@
           </div>
           <div id="navbar" class="hidden flex-1 md:flex justify-between items-center">
             <ul class="flex items-center gap-6">
-              <li>
+              <li class="link-navbar">
                 <a
-                  class="font-manrope text-caption16 font-medium text-white"
-                  href="#"
+                  class="  hover:opacity-75 transition-all font-manrope text-caption16 font-medium text-white"
+                  href="#para-quem-e"
                   >Para quem é</a
                 >
               </li>
-              <li>
+              <li class="link-navbar">
                 <a
-                  class="font-manrope text-caption16 font-medium text-white"
-                  href="#"
+                  class=" hover:opacity-75 transition-all font-manrope text-caption16 font-medium text-white"
+                  href="#depoimentos"
                   >Depoimentos</a
                 >
               </li>
-              <li>
+              <li class="link-navbar">
                 <a
-                  class="font-manrope text-caption16 font-medium text-white"
-                  href="#"
+                  class=" hover:opacity-75 transition-all font-manrope text-caption16 font-medium text-white"
+                  href="#beneficios"
                   >Benefícios</a
                 >
               </li>
-              <li>
+              <li class="link-navbar">
                 <a
-                  class="font-manrope text-caption16 font-medium text-white"
-                  href="#"
+                  class=" hover:opacity-75 transition-all font-manrope text-caption16 font-medium text-white"
+                  href="#vantagens"
                   >Vantagens</a
                 >
               </li>
@@ -278,7 +278,7 @@
       </div>
     </section>
 
-    <section class="px-5 lg:px-0 w-full bg-black">
+    <section id="beneficios" class="px-5 lg:px-0 w-full bg-black">
       <div class="container mx-auto w-full py-[124px]">
         <div class="flex flex-col md:flex-row justify-between items-end">
           <h2
@@ -374,7 +374,7 @@
       </div>
     </section>
 
-    <section class="px-5 lg:px-0 w-full bg-white py-[148px]">
+    <section id="depoimentos" class="px-5 lg:px-0 w-full bg-white py-[148px]">
       <div class="container mx-auto w-full">
         <div class="flex flex-col md:items-start">
           <span
@@ -437,7 +437,7 @@
       </div>
     </section>
 
-    <section class="px-5 lg:px-0 w-full bg-gray100 py-[124px]">
+    <section id="para-quem-e" class="px-5 lg:px-0 w-full bg-gray100 py-[124px]">
       <div class="container mx-auto w-full">
         <div class="flex flex-col items-center">
           <span
@@ -555,7 +555,7 @@
       </div>
     </section>
 
-    <section class="px-5 lg:px-0 w-full py-[124px]">
+    <section id="vantagens" class="px-5 lg:px-0 w-full py-[124px]">
       <div class="container mx-auto">
         <div class="flex flex-col items-center">
           <span
@@ -788,10 +788,10 @@
           <div>
             <strong class="font-manrope text-caption16 text-white font-bold">SIGA NOSSAS REDES</strong>
             <div class="flex flex-col gap-6 mt-8">
-              <a class="font-manrope text-white text-body16 font-normal" href="">Para quem é</a>
-              <a class="font-manrope text-white text-body16 font-normal" href="">Depoimentos</a>
-              <a class="font-manrope text-white text-body16 font-normal" href="div">Benefícios</a>
-              <a class="font-manrope text-white text-body16 font-normal" href="div">Vantagens</a>
+              <a class="hover:text-redPrimary transition-all font-manrope text-white text-body16 font-normal" href="#para-quem-e">Para quem é</a>
+              <a class="hover:text-redPrimary transition-all font-manrope text-white text-body16 font-normal" href="#depoimentos">Depoimentos</a>
+              <a class="hover:text-redPrimary transition-all font-manrope text-white text-body16 font-normal" href="#beneficios">Benefícios</a>
+              <a class="hover:text-redPrimary transition-all font-manrope text-white text-body16 font-normal" href="#vantagens">Vantagens</a>
             </div>
           </div>
 
@@ -800,18 +800,18 @@
             <div>
               <strong class="font-manrope text-caption16 text-white font-bold">NOSSAS POLÍTICAS</strong>
               <div class="flex flex-col gap-6 mt-8">
-                <a class="font-manrope text-white text-body16 font-normal" href="">Termos e Condições</a>
-                <a class="font-manrope text-white text-body16 font-normal" href="">Privacidade & Cookies</a>
+                <a class="hover:text-redPrimary transition-all font-manrope text-white text-body16 font-normal" href="">Termos e Condições</a>
+                <a class="hover:text-redPrimary transition-all font-manrope text-white text-body16 font-normal" href="">Privacidade & Cookies</a>
               </div>
             </div>
 
             <div>
               <strong class="font-manrope text-caption16 text-white font-bold">CONTATO</strong>
               <div class="flex flex-col gap-6 mt-8">
-                <a class="font-manrope text-white text-body16 font-normal flex items-center gap-2" href="">
+                <a class=" hover:text-redPrimary transition-all font-manrope text-white text-body16 font-normal flex items-center gap-2" href="">
                   <img src="./assets/chat-icon.svg" alt="" srcset=""> email@polifrete.com.br
                 </a>
-                <a class="font-manrope text-white text-body16 font-normal flex items-center gap-2" href="">
+                <a class="hover:text-redPrimary transition-all font-manrope text-white text-body16 font-normal flex items-center gap-2" href="">
                   <img src="./assets/phone-icon.svg" alt="" srcset=""> +55 (00) 00000-0000
                 </a>
               </div>
@@ -916,6 +916,26 @@ buttonNavbar.addEventListener("click", () => {
   navbar.classList.toggle("show-navbar");
   header.classList.toggle("show-navbar-header");
 });
+
+const linkNavbar = document.querySelectorAll(".link-navbar");
+
+linkNavbar.forEach((link) =>
+  link.addEventListener("click", () => {
+    navbar.classList.remove("show-navbar");
+    header.classList.remove("show-navbar-header");
+  })
+);
+
+function checkIfIsScrolled() {
+  const scrollY = window.scrollY;
+  if (scrollY > 90) {
+    header.classList.add("bg-header-fixed");
+  }
+}
+
+
+checkIfIsScrolled();
+
 
 </script>
   </body>

@@ -1357,8 +1357,17 @@ body {
   --tw-bg-opacity: 1;
 }
 
+.hover\:text-redPrimary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(185 0 48 / var(--tw-text-opacity));
+}
+
 .hover\:opacity-80:hover {
   opacity: 0.8;
+}
+
+.hover\:opacity-75:hover {
+  opacity: 0.75;
 }
 
 @media (min-width: 768px) {
