@@ -46,6 +46,7 @@ module.exports = {
       fontFamily: {
         archivo: "Archivo",
         manrope: "Manrope",
+        electrolize: "Electrolize",
       },
     },
   },

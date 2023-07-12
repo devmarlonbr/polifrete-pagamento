@@ -8,10 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polifrete</title>
 
+    
+
     <link
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Electrolize&display=swap" rel="stylesheet">
 
     <link
       rel="stylesheet"
@@ -23,9 +27,9 @@
 
   <body>
     <div
-      class="w-full h-[850px] bg-[url('../assets/background-hero-polifrete.png')] bg-cover bg-center"
+      class="w-full lg:h-[850px] bg-[url('../assets/background-hero-polifrete.png')] bg-cover bg-center"
     >
-      <header id="header" class="transition-all bg-transparent fixed top-0 left-0 right-0 z-50">
+      <header id="header" class="px-5 lg:px-0 transition-all bg-transparent fixed top-0 left-0 right-0 z-50">
         <div
           class="container mx-auto w-full flex justify-between items-center h-[72px] gap-8"
         >
@@ -34,7 +38,7 @@
               <img src="./assets/logo-polifrete.svg" alt="" srcset="" />
             </a>
           </div>
-          <div class="flex-1 flex justify-between items-center">
+          <div class="hidden flex-1 md:flex justify-between items-center">
             <ul class="flex items-center gap-6">
               <li>
                 <a
@@ -78,7 +82,7 @@
       </header>
 
       <main
-        class="container mx-auto h-full w-full flex items-center justify-between pt-[72px]"
+        class="max-h-[1120px] overflow-hidden md:max-h-max px-5 lg:px-0 container mx-auto h-full w-full flex flex-col lg:flex-row items-center justify-between pt-[142px] md:pt-[72px]"
       >
         <div class="max-w-[665px] w-full">
           <div class="flex items-center gap-4">
@@ -87,51 +91,63 @@
             >
               <img src="./assets/seguro-icon.svg" alt="" />
             </div>
-            <p class="font-archivo font-semibold text-body14 text-white">
+            <p class="font-archivo font-semibold text-sm12 md:text-body14 text-white">
               Seu pagamento de frete está seguro por aqui
             </p>
           </div>
           <h1
-            class="mt-4 font-archivo font-bold text-head40 text-white leading-tight"
+            class="mt-4 font-archivo font-bold text-head24 lg:text-head40 text-white leading-tight"
           >
             Aprimore sua logística e evite complicações jurídicas com nosso
             serviço de pagamento de frete simplificado e seguro.
           </h1>
           <p
-            class="max-w-[580px] w-full mt-6 font-manrope text-body18 text-white leading-normal"
+            class="max-w-[580px] w-full mt-6 font-manrope text-body16 md:text-body18 text-white leading-normal"
           >
             Transforme sua logística com nosso serviço de pagamento de frete:
             facilidade, segurança e tranquilidade garantidas.
           </p>
 
-          <div class="mt-[96px] flex items-center gap-8">
+          <div class="mt-16 md:mt-[96px] flex items-center gap-8">
             <div
-              class="w-[48px] h-[48px] bg-white bg-opacity-25 rounded-lg flex justify-center items-center"
+              class="shrink-0 w-[48px] h-[48px] bg-white bg-opacity-25 rounded-lg flex justify-center items-center"
             >
               <img src="./assets/arrow-long-down-80.svg" alt="" srcset="" />
             </div>
             <p
-              class="max-w-[240px] font-manrope font-normal text-sm14 text-white opacity-80"
+              class="max-w-[240px] font-manrope font-normal text-sm12 md:text-sm14 text-white opacity-80"
             >
               Role a página para baixo e veja todos serviços que temos a te
               oferecer.
             </p>
           </div>
+
         </div>
-        <div>
-          <img src="./assets/app-smartphone-polifrete.png" alt="" />
+        <div class="relative mt-16 md:mt-0">
+          <img class="hidden md:block" src="./assets/app-smartphone-polifrete.png" alt="" />
+          <img class="blocK md:hidden" src="./assets/app-smartphone-polifrete-mob.png" alt="" />
+          <div>
+            <div class="opacity-0 top-[200px] md:top-[300px] right-0 absolute flex items-center gap-3 p-3 bg-white animate-cards-image">
+              <img src="./assets/checkbox-icon.svg" alt="" srcset="">
+              <p class="font-electrolize text-sm12 md:text-body16 text-black font-bold">CONTA DIGITAL</p>
+            </div>
+            <div class="opacity-0 transition-all top-[256px] md:top-[360px] right-0 absolute flex items-center gap-3 p-3 bg-white animate-cards-image">
+              <img src="./assets/checkbox-icon.svg" alt="" srcset="">
+              <p class="font-electrolize text-sm12 md:text-body16 text-black font-bold">PAGAMENTO DE PIX</p>
+            </div>
+          </div>
         </div>
       </main>
     </div>
 
-    <section class="w-full container mx-auto py-[124px]">
+    <section class="px-5 md:px-0 w-full container mx-auto py-[124px]">
       <div class="flex flex-col items-center">
         <span
-          class="uppercase font-manrope font-bold text-caption18 text-bluePrimary"
+          class="uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
           >Já vivenciou situações como essas?</span
         >
         <h2
-          class="mt-2 max-w-[650px] text-center text-head40 font-archivo leading-tight text-black font-bold"
+          class="mt-2 max-w-[650px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
         >
           Sua empresa enfrenta desafios no pagamento de frete?
         </h2>
@@ -254,11 +270,11 @@
       </div>
     </section>
 
-    <section class="w-full bg-black">
+    <section class="px-5 lg:px-0 w-full bg-black">
       <div class="container mx-auto w-full py-[124px]">
-        <div class="flex justify-between items-end">
+        <div class="flex flex-col md:flex-row justify-between items-end">
           <h2
-            class="max-w-[780px] w-full text-head32 font-archivo leading-tight"
+            class="max-w-[780px] w-full text-head24 md:text-head32 font-archivo leading-tight"
           >
             facilite a  sua logística com soluções integradas para
             <strong class="text-gray600">rastreamento</strong>,
@@ -267,7 +283,7 @@
             <strong class="text-gray600">pagamento</strong>, tudo isso em um só
             lugar
           </h2>
-          <div>
+          <div class="mt-12 md:mt-0 w-full md:w-auto">
             <button
               class="bg-bluePrimary py-2 px-5 rounded-lg font-archivo font-bold text-button16"
             >
@@ -276,7 +292,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-4 w-full mt-14 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full mt-14 gap-8">
           <div class="px-8 py-10 bg-white rounded-lg">
             <div class="flex justify-center items-end w-full">
               <h3
@@ -352,23 +368,23 @@
       </div>
     </section>
 
-    <section class="w-full bg-white py-[148px]">
+    <section class="px-5 lg:px-0 w-full bg-white py-[148px]">
       <div class="container mx-auto w-full">
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col md:items-start">
           <span
-            class="uppercase font-manrope font-bold text-caption18 text-bluePrimary"
+            class="text-center uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
             >DEPOIMENTOS</span
           >
           <h2
-            class="mt-2 max-w-[650px] text-center text-head40 font-archivo leading-tight text-black font-bold"
+            class="mt-2 max-w-[650px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
           >
             O que nossos clientes dizem
           </h2>
         </div>
 
-        <div class="w-full flex justify-between mt-12">
+        <div class="w-full flex flex-col md:flex-row items-center justify-between mt-12">
           <div
-            class="flex justify-center items-center max-w-[592px] w-full h-[345px] bg-black rounded-lg"
+            class="flex justify-center items-center md:max-w-[592px] w-full h-[280px] md:h-[345px] bg-black rounded-lg"
           >
             <div
               class="h-[84px] w-[84px] rounded-full bg-redPrimary bg-opacity-20 border border-redPrimary"
@@ -376,7 +392,7 @@
           </div>
 
           <div
-            class="max-w-[520px] w-full flex flex-col items-start -mt-[112px]"
+            class="max-w-[520px] w-full flex flex-col items-start mt-16 md:-mt-[112px]"
           >
             <img class="h-[56px]" src="./assets/quote-icon.svg" />
             <div class="mt-8 flex flex-col gap-3">
@@ -397,7 +413,7 @@
                 atividades operacionais.
               </p>
             </div>
-            <div class="flex gap-8 items-center mt-6">
+            <div class="flex gap-8 items-center mt-16 md:mt-6">
               <div class="h-[56px] w-[56px] bg-redPrimary rounded-full"></div>
               <div>
                 <h5 class="font-archivo text-head24 text-black font-bold">
@@ -413,30 +429,30 @@
       </div>
     </section>
 
-    <section class="w-full bg-gray100 py-[124px]">
+    <section class="px-5 lg:px-0 w-full bg-gray100 py-[124px]">
       <div class="container mx-auto w-full">
         <div class="flex flex-col items-center">
           <span
-            class="uppercase font-manrope font-bold text-caption18 text-bluePrimary"
+            class="uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
             >Para quem é?</span
           >
           <h2
-            class="mt-2 max-w-[650px] text-center text-head40 font-archivo leading-tight text-black font-bold"
+            class="mt-2 max-w-[650px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
           >
             Quem pode se beneficiar
           </h2>
         </div>
 
-        <div class="flex justify-center items-start gap-8 mt-16">
+        <div class="flex flex-col md:flex-row justify-center items-start gap-8 mt-16">
           <div class="max-w-[489px] w-full bg-white rounded-lg">
             <img
-              class="w-full"
+              class=":w-full"
               src="./assets/transportadoras-ilustration.svg"
               alt=""
               srcset=""
             />
             <div class="p-10">
-              <h3 class="font-archivo text-head32 text-black font-bold">
+              <h3 class="font-archivo text-head24 md:text-head32 text-black font-bold">
                 Transportadoras
               </h3>
               <p class="font-manrope text-body16 text-gray400 mt-6">
@@ -460,7 +476,7 @@
               srcset=""
             />
             <div class="p-10">
-              <h3 class="font-archivo text-head32 text-black font-bold">
+              <h3 class="font-archivo text-head24 md:text-head32 text-black font-bold">
                 Indústrias e empresas
               </h3>
               <p class="font-manrope text-body16 text-gray400 mt-6">
@@ -531,22 +547,22 @@
       </div>
     </section>
 
-    <section class="w-full py-[124px]">
+    <section class="px-5 lg:px-0 w-full py-[124px]">
       <div class="container mx-auto">
         <div class="flex flex-col items-center">
           <span
-            class="uppercase font-manrope font-bold text-caption18 text-bluePrimary"
+            class="uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
             >vantagens</span
           >
           <h2
-            class="mt-2 max-w-[780px] text-center text-head40 font-archivo leading-tight text-black font-bold"
+            class="mt-2 max-w-[780px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
           >
             Descubra as vantagens incríveis ao utilizar o meio de pagamento da
             Polifrete
           </h2>
         </div>
 
-        <div class="w-full grid grid-cols-2 gap-8 mt-28">
+        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-8 mt-28">
 
           <div class="flex gap-8 items-start">
             <div class="shrink-0 h-[48px] w-[48px] bg-redPrimary rounded-lg flex justify-center items-center">
@@ -672,28 +688,28 @@
       </div>
     </section>
 
-    <section class="w-full bg-white py-[124px]">
+    <section class="px-5 lg:px-0 w-full bg-white py-[124px]">
       <div class="container mx-auto w-full">
         <div class="flex flex-col items-center">
           <span
-            class="uppercase font-manrope font-bold text-caption18 text-bluePrimary"
+            class="uppercase font-manrope font-bold text-caption16 md:text-caption18 text-bluePrimary"
             >contato</span
           >
           <h2
-            class="mt-2 max-w-[780px] text-center text-head40 font-archivo leading-tight text-black font-bold"
+            class="mt-2 max-w-[320px] md:max-w-[780px] text-center text-head32 md:text-head40 font-archivo leading-tight text-black font-bold"
           >
           Entre em contato com a gente
           </h2>
           <p class="font-manrope text-gray400 text-body16 max-w-[440px] text-center mt-6">Preencha o formulário e <strong class="text-redPrimary font-bold">ganhe uma consultoria de 20 minutos grátis</strong> para sua empresa</p>
         </div>
 
-        <div class="flex justify-between items-start px-[104px] mt-16">
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-start md:px-[104px] mt-16">
 
-          <div class="max-w-[384px] w-full">
+          <div class="w-[75%] md:max-w-[384px] md:w-full">
               <img class="w-full" src="./assets/contact-form-ilustration.svg" alt="" srcset="">
           </div>
 
-          <form class="flex flex-col max-w-[487px] w-full" action="">
+          <form class="order-first md:order-2 mb-16 md:mb-0 flex flex-col max-w-[487px] w-full" action="">
             <div class="flex flex-col gap-3">
               <div class="flex flex-col">
                 <label class="font-manrope font-medium text-sm14 text-label mb-2" for="">Nome*</label>
@@ -720,13 +736,13 @@
       </div>
     </section>
 
-    <section class="py-[240px] w-full bg-[url('../assets/background-caminhoneiro-polifrete.png')] bg-no-repeat bg-cover bg-center">
+    <section class="px-5 lg:px-0 py-[240px] w-full bg-[url('../assets/background-caminhoneiro-polifrete.png')] bg-no-repeat bg-cover bg-center">
       <div class="container mx-auto">
 
-        <h3 class="max-w-[820px] leading-tight font-archivo text-head32 font-bold text-white">
+        <h3 class="max-w-[820px] leading-tight font-archivo text-head24 md:text-head32 font-bold text-white">
           facilite a  sua logística com soluções integradas para rastreamento, digitalização de documentos, auditoria e pagamento, tudo isso em um só lugar
         </h3>
-        <p class="max-w-[730px] font-manrope text-body16 text-white mt-4">Diga adeus às causas judiciais. Na Polifrete  cuidamos de tudo para você, desde a liberação do crédito até a digitalização de documentos importantes. Tenha tranquilidade e segurança, nos deixando  cuidar de todos os detalhes enquanto você se concentra no crescimento do seu negócio.</p>
+        <p class="max-w-[730px] font-manrope text-body14 md:text-body16 text-white mt-4">Diga adeus às causas judiciais. Na Polifrete  cuidamos de tudo para você, desde a liberação do crédito até a digitalização de documentos importantes. Tenha tranquilidade e segurança, nos deixando  cuidar de todos os detalhes enquanto você se concentra no crescimento do seu negócio.</p>
         <button class="mt-6 max-w-[220px] w-full bg-white font-archivo text-button16 font-bold text-black py-2 rounded-lg">
           Entrar em contato
         </button>
@@ -734,9 +750,9 @@
       </div>
     </section>
 
-    <footer class="w-full bg-black">
+    <footer class=" w-full bg-black">
 
-      <div class="container mx-auto flex items-start justify-between  py-[80px]">
+      <div class="px-5 md:px-0 container mx-auto flex flex-col lg:flex-row items-start justify-between py-[80px] gap-16 md:gap-0">
 
         <div class="max-w-[420px] w-full">
           <img src="./assets/logo-polifrete.svg" alt="" srcset="">
@@ -759,7 +775,7 @@
           </div>
         </div>
 
-        <div class="flex items-start gap-8">
+        <div class="flex flex-wrap lg:flex-row items-start gap-12 md:gap-8">
 
           <div>
             <strong class="font-manrope text-caption16 text-white font-bold">SIGA NOSSAS REDES</strong>
@@ -795,11 +811,11 @@
             
           </div>
 
-          <div class="flex flex-col items-end">
-            <p class="max-w-[210px] w-full text-white font-manrope text-body14 text-right">Preencha o formulário e ganhe 
+          <div class="flex flex-col md:items-end">
+            <p class="max-w-[210px] w-full text-white font-manrope text-body14 text-left md:text-right">Preencha o formulário e ganhe 
               uma  consultoria de 20 minutos 
               grátis para sua empresa</p>
-            <button class="mt-6 font-archivo font-bold text-button16 text-white bg-redPrimary rounded-lg py-2 px-5">
+            <button class="w-full mt-6 font-archivo font-bold text-button16 text-white bg-redPrimary rounded-lg py-2 px-5">
               Solicitar Contato
             </button>
           </div>
@@ -809,10 +825,10 @@
 
       </div>
 
-      <div class="w-full bg-blackFull py-12">
-        <div class="container mx-auto w-full flex items-center justify-between">
-          <p class="font-manrope text-body14 text-white font-normal opacity-40">Todos os direitos estão reservados a Polifrete Copyright © 2023.</p>
-          <a class="flex items-center gap-1 opacity-20 font-manrope text-body14 font-normal" href="">
+      <div class="px-5 md:px-0 w-full bg-blackFull py-12">
+        <div class="container mx-auto w-full flex flex-col md:flex-row items-center justify-between">
+          <p class="text-center md:text-left font-manrope text-body14 text-white font-normal opacity-40">Todos os direitos estão reservados a Polifrete Copyright © 2023.</p>
+          <a class="flex items-center gap-1 opacity-20 font-manrope text-body14 font-normal mt-16 md:mt-0" href="">
             Desenvolvido por <img src="./assets/devmarlon.svg" alt="" srcset="">
           </a>
         </div>
@@ -830,6 +846,23 @@
           delay: 0,
         },
         speed: 3000,
+        breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2.5,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 4,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 5,
+    },
+    760: {
+      slidesPerView: 6,
+    }
+  }
       });
     </script>
 
