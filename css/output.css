@@ -1349,27 +1349,26 @@ body {
 /* intersect */
 
 .intersect {
-  transition: 0.25s all;
 }
 
 .intersect-transition-25 {
-  transition: 0.25s all !important;
+  transition: 0.25s all;
 }
 
 .intersect-transition-40 {
-  transition: 0.4s all !important;
+  transition: 0.4s all;
 }
 
 .intersect-transition-60 {
-  transition: 0.6s all !important;
+  transition: 0.6s all;
 }
 
 .intersect-transition-80 {
-  transition: 0.8s all !important;
+  transition: 0.8s all;
 }
 
 .intersect-transition-100 {
-  transition: 1s all !important;
+  transition: 1s all;
 }
 
 .intersect-hidden {
@@ -1390,6 +1389,10 @@ body {
 
 .intersect-child:nth-child(4) {
   transition-delay: 600ms;
+}
+
+.intersect-child:nth-child(5) {
+  transition-delay: 800ms;
 }
 
 /* from bottom */
