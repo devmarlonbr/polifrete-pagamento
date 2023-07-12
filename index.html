@@ -32,21 +32,21 @@
     </div>
 
     <div
-      class="w-full lg:h-[850px] bg-[url('../assets/background-hero-polifrete.png')] bg-cover bg-center"
+      class="w-full lg:h-[850px] bg-blueDark bg-[url('../assets/background-hero-polifrete.png')] bg-cover bg-center"
     >
-      <header id="header" class="px-5 lg:px-0 transition-all bg-transparent fixed top-0 left-0 right-0 z-50">
+      <header id="header" class="transition-all bg-transparent fixed top-0 left-0 right-0 z-50">
         <div
           class="container mx-auto w-full flex justify-between items-center h-[72px] gap-8"
         >
-          <div class="flex items-center justify-between w-full md:w-auto md:block">
+          <div class="px-5 lg:px-0 flex items-center justify-between w-full md:w-auto md:block">
             <a href="">
               <img src="./assets/logo-polifrete.svg" alt="" srcset="" />
             </a>
-            <button class="md:hidden">
+            <button id="button-navbar" class="hover:opacity-80 transition-all md:hidden">
               <img src="./assets/sandwich.svg" alt="" srcset="">
             </button>
           </div>
-          <div class="hidden flex-1 md:flex justify-between items-center">
+          <div id="navbar" class="hidden flex-1 md:flex justify-between items-center">
             <ul class="flex items-center gap-6">
               <li>
                 <a
@@ -79,7 +79,7 @@
             </ul>
             <div>
               <button
-                class="bg-redPrimary py-2 px-5 rounded-lg font-archivo text-caption16 font-bold text-white gap-2 flex items-center"
+                class="hover:opacity-80 transition-all bg-redPrimary py-2 px-5 rounded-lg font-archivo text-caption16 font-bold text-white gap-2 flex items-center"
               >
                 Entrar em contato
                 <img src="./assets/chat-icon.svg" alt="" srcset="" />
@@ -293,7 +293,7 @@
           </h2>
           <div class="mt-12 md:mt-0 w-full md:w-auto">
             <button
-              class="bg-bluePrimary py-2 px-5 rounded-lg font-archivo font-bold text-button16"
+              class="hover:opacity-80 transition-all bg-bluePrimary py-2 px-5 rounded-lg font-archivo font-bold text-button16"
             >
               Solicitar contato
             </button>
@@ -324,10 +324,26 @@
               <h3
                 class="text-head56 font-archivo font-bold text-bluePrimary leading-[48px]"
               >
-                +100
+                +5000
+              </h3>
+
+            </div>
+            <p
+              class="text-gray400 text-body16 font-manrope font-normal text-center mt-3"
+            >
+              Volume de pagamento superior a 100 milhões
+            </p>
+          </div>
+
+          <div class="px-8 py-10 bg-white rounded-lg">
+            <div class="flex justify-center items-end w-full">
+              <h3
+                class="text-head56 font-archivo font-bold text-bluePrimary leading-[48px]"
+              >
+                10%
               </h3>
               <strong class="text-body16 text-bluePrimary font-archivo"
-                >Milhões</strong
+                >Média</strong
               >
             </div>
             <p
@@ -342,28 +358,10 @@
               <h3
                 class="text-head56 font-archivo font-bold text-bluePrimary leading-[48px]"
               >
-                +100
+                30%
               </h3>
               <strong class="text-body16 text-bluePrimary font-archivo"
-                >Milhões</strong
-              >
-            </div>
-            <p
-              class="text-gray400 text-body16 font-manrope font-normal text-center mt-3"
-            >
-              Volume de pagamento superior a 100 milhões
-            </p>
-          </div>
-
-          <div class="px-8 py-10 bg-white rounded-lg">
-            <div class="flex justify-center items-end w-full">
-              <h3
-                class="text-head56 font-archivo font-bold text-bluePrimary leading-[48px]"
-              >
-                +100
-              </h3>
-              <strong class="text-body16 text-bluePrimary font-archivo"
-                >Milhões</strong
+                >Economize</strong
               >
             </div>
             <p
@@ -395,8 +393,10 @@
             class="flex justify-center items-center md:max-w-[592px] w-full h-[280px] md:h-[345px] bg-black rounded-lg"
           >
             <div
-              class="h-[84px] w-[84px] rounded-full bg-redPrimary bg-opacity-20 border border-redPrimary"
-            ></div>
+              class="hover:scale-110 hover:bg-opacity-100 transition-all flex justify-center items-center h-[84px] w-[84px] rounded-full bg-redPrimary bg-opacity-20 border border-redPrimary"
+            >
+            <img src="./assets/play-icon.svg" alt="" srcset="">
+          </div>
           </div>
 
           <div
@@ -688,7 +688,7 @@
                 Não perca mais tempo
               </strong>
               </h4>
-              <a class="font-archivo text-button16 text-bluePrimary font-bold flex items-center gap-2 mt-4" href="">Entre em contato<img src="./assets/arrow-right-icon.svg" alt="" srcset=""></a>
+              <a class="font-archivo hover:opacity-80 transition-all text-button16 text-bluePrimary font-bold flex items-center gap-2 mt-4" href="">Entre em contato<img src="./assets/arrow-right-icon.svg" alt="" srcset=""></a>
             </div>
           </div>
 
@@ -732,7 +732,7 @@
                 <input class="font-archivo rounded-lg bg-input w-full text-placeholder py-3 px-5" placeholder="+55 (00) 00000-0000" type="text">
               </div>
             </div>
-            <button class="mt-12 w-full flex justify-center items-center rounded-lg bg-redPrimary py-4 font-archivo text-button16 font-bold text-white">
+            <button class="hover:opacity-80 transition-all mt-12 w-full flex justify-center items-center rounded-lg bg-redPrimary py-4 font-archivo text-button16 font-bold text-white">
               Enviar mensagem
             </button>
             <div class="flex justify-center items-center gap-4 mt-8">
@@ -751,7 +751,7 @@
           facilite a  sua logística com soluções integradas para rastreamento, digitalização de documentos, auditoria e pagamento, tudo isso em um só lugar
         </h3>
         <p class="max-w-[730px] font-manrope text-body14 md:text-body16 text-white mt-4">Diga adeus às causas judiciais. Na Polifrete  cuidamos de tudo para você, desde a liberação do crédito até a digitalização de documentos importantes. Tenha tranquilidade e segurança, nos deixando  cuidar de todos os detalhes enquanto você se concentra no crescimento do seu negócio.</p>
-        <button class="mt-6 max-w-[220px] w-full bg-white font-archivo text-button16 font-bold text-black py-2 rounded-lg">
+        <button class="hover:opacity-80 transition-all mt-6 max-w-[220px] w-full bg-white font-archivo text-button16 font-bold text-black py-2 rounded-lg">
           Entrar em contato
         </button>
 
@@ -823,7 +823,7 @@
             <p class="max-w-[210px] w-full text-white font-manrope text-body14 text-left md:text-right">Preencha o formulário e ganhe 
               uma  consultoria de 20 minutos 
               grátis para sua empresa</p>
-            <button class="w-full mt-6 font-archivo font-bold text-button16 text-white bg-redPrimary rounded-lg py-2 px-5">
+            <button class="hover:opacity-80 transition-all w-full mt-6 font-archivo font-bold text-button16 text-white bg-redPrimary rounded-lg py-2 px-5">
               Solicitar Contato
             </button>
           </div>
@@ -836,7 +836,7 @@
       <div class="px-5 md:px-0 w-full bg-blackFull py-12">
         <div class="container mx-auto w-full flex flex-col md:flex-row items-center justify-between">
           <p class="text-center md:text-left font-manrope text-body14 text-white font-normal opacity-40">Todos os direitos estão reservados a Polifrete Copyright © 2023.</p>
-          <a class="flex items-center gap-1 opacity-20 font-manrope text-body14 font-normal mt-16 md:mt-0" href="">
+          <a  class="flex items-center gap-1 opacity-20 font-manrope text-body14 font-normal mt-16 md:mt-0" href="https://www.devmarlon.work">
             Desenvolvido por <img src="./assets/devmarlon.svg" alt="" srcset="">
           </a>
         </div>
@@ -908,6 +908,15 @@ elements.forEach((element) => observer.observe(element));
 console.log(
   `Obrigado por acessar nosso site! 😁 \n Solicite um orçamento agora em www.devmarlon.work!`
 );
+
+const navbar = document.querySelector("#navbar");
+const buttonNavbar = document.querySelector("#button-navbar");
+
+buttonNavbar.addEventListener("click", () => {
+  navbar.classList.toggle("show-navbar");
+  header.classList.toggle("show-navbar-header");
+});
+
 </script>
   </body>
 </html>

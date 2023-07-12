@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline-color: #b90030;
 }
 
 html {
@@ -53,5 +54,32 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+.show-navbar-header {
+  @media (max-width: 768px) {
+    background-color: #111111;
+    transition: 0.5s !important;
+  }
+}
+
+.show-navbar {
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 72px;
+    display: flex !important;
+    flex-direction: column;
+    padding: 32px 20px;
+    width: 100%;
+    background-color: #111111;
+    gap: 64px;
+    transition: 0.5s !important;
+  }
+}
+
+.show-navbar > ul {
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 }
